@@ -6,24 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="เว็บไซต์สำหรับส่งงานที่ 2">
     <meta name="author" content="Krinna Sarabut">
+    <link rel="stylesheet" href="./static/css/animation.css">
     <link rel="stylesheet" href="./static/css/home.css">
     <title>งานที่ 2 ออกแบบโครงสร้างหน้าเว็บไซต์</title>
 </head>
 
 <body>
+    <video autoplay muted loop id="bg-video">
+        <source src="/static/assets/media-video/bg.mp4" type="video/mp4">
+    </video>
+    <input type="checkbox" id="menu-toggle">
+
+    <nav class="menu-box fade-down">
+        <label for="menu-toggle" class="menu-header"></label>
+
+        <div class="menu-content">
+            <p class="menu-title" style="color: rgb(56, 185, 121);">ข้อมูล</p>
+            <a href="#about-me">เกี่ยวกับผู้จัดทำ</a>
+            <a href="#lists">รายการ</a>
+
+            <p class="menu-title" style="color: rgb(56, 185, 121);">แหล่งที่อื่น</p>
+            <a href="https://www.google.co.th" target="_blank">Google</a>
+            <a href="https://classroom.google.com/" target="_blank">Google Classroom</a>
+            <a href="https://github.com/krinna20398/-2-myweb" target="_blank">Github</a>
+        </div>
+    </nav>
+
+
 
     <!-- ===== HEADER ===== -->
     <header>
-        <img class="imghead" src="/static/assets/img/IMG_3.png" alt="รูปโปรไฟล์ผู้จัดทำ" width="224" height="224">
+        <img class="imghead fade-in" src="/static/assets/img/IMG_3.png" alt="รูปโปรไฟล์ผู้จัดทำ" width="224"
+            height="224">
 
-        <section id="present">
-            <h2>ทำงานส่ง อาจารย์เรวดี</h2>
+        <section id="presentation" class="fade-in">
+            <h2 style="font-size: 36px; text-shadow: 2px 2px 5px gray;">
+                ทำงานส่ง อาจารย์ เรวดี อะมินรัมย์
+            </h2>
 
-            <a class="lang-link html" href="https://www.w3schools.com/html/" target="_blank">
+            <a class="lang-link html fade-right" href="https://www.w3schools.com/html/" target="_blank">
                 <img src="https://www.svgrepo.com/show/353884/html-5.svg" alt="HTML">
             </a>
 
-            <a class="lang-link css" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+            <a class="lang-link css fade-left" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
                 <img src="https://www.svgrepo.com/show/353623/css-3.svg" alt="CSS">
             </a>
 
@@ -35,21 +60,22 @@
     <main>
 
         <!-- ABOUT -->
-        <section id="about-me">
+        <section id="about-me" class="fade-down">
+            <h1 style="text-shadow: 2px 2px 5px rgb(13, 16, 170); color: rgb(37, 103, 226);">เกี่ยวกับผู้จัดทำ</h1>
             <aside>
-                <h2>เกี่ยวกับผู้จัดทำ</h2>
-                <p>สวัสดีครับ ผมชื่อ ฆฤณา สารบุตร ชื่อเล่น วันพุธ หรือ พุธ</p>
+                <h2>นายฆฤณา สารบุตร</h2>
+                <p>ชื่อเล่น วันพุธ หรือ พุธ</p>
                 <p>นักศึกษา ปวส.2 สาขาเทคโนโลยีธุรกิจดิจิทัล วิทยาลัยเทคนิคดอนเมือง</p>
                 <p>งานอดิเรกคือการนอน ถ้าเป็นไปได้อยากนอนให้ครบ 28 ชั่วโมง</p>
-                <p>ชอบหาความรู้ใหม่ ๆ แม้บางครั้งจะขี้เกียจบ้าง</p>
-                <p>ชอบสถานที่เงียบ สงบ และเป็นส่วนตัว</p>
-                <p>ของที่ชอบที่สุดคือของหวานทุกชนิด</p>
+                <p>ชอบหาความรู้ใหม่ๆ แม้บางครั้งจะขี้เกียจบ้าง</p>
+                <p>ชอบสถานที่เงียบ สงบ และเป็นพื้นที่ส่วนตัว</p>
+                <p>ของที่ชอบที่สุดคือของหวานทุกชนิด เป็นไปได้ก็อยากกินตลอด</p>
             </aside>
         </section>
 
         <!-- LISTS -->
-        <section id="lists">
-            <h2>รายการต่าง ๆ ในเว็บไซต์</h2>
+        <section id="lists" class="fade-up">
+            <h1  style="text-shadow: 2px 2px 5px rgb(13, 16, 170); color: rgb(37, 103, 226);">รายการต่าง ๆ ในเว็บไซต์</h1>
 
             <table>
                 <thead>
@@ -75,31 +101,13 @@
             </table>
         </section>
 
-        <!-- LINKS -->
-        <section id="main-link">
-            <h2>ลิงก์ภายใน</h2>
-            <nav>
-                <a href="#about-me">เกี่ยวกับผู้จัดทำ</a>
-                <a href="#lists">รายการ</a>
-            </nav>
-
-            <h2>ลิงก์ภายนอก</h2>
-            <ul>
-                <li><a href="https://www.google.co.th" target="_blank">Google</a></li>
-                <li><a href="https://classroom.google.com/" target="_blank">Google Classroom</a></li>
-                <li><a href="https://github.com/krinna20398/-2-myweb" target="_blank">Github</a></li>
-            </ul>
-        </section>
-
-    </main>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <p>จัดทำโดย นายฆฤณา สารบุตร</p>
-        <p>วิทยาลัยเทคนิคดอนเมือง สาขาเทคโนโลยีธุรกิจดิจิทัล</p>
-        <p>รายวิชา HTML CSS JavaScript (21910-2001)</p>
-        <p class="highlight-copyright">© 2025–2026 Portfolio Website</p>
-    </footer>
+        <!-- ===== FOOTER ===== -->
+        <footer>
+            <p>จัดทำโดย นายฆฤณา สารบุตร</p>
+            <p>วิทยาลัยเทคนิคดอนเมือง สาขาเทคโนโลยีธุรกิจดิจิทัล</p>
+            <p>รายวิชา HTML CSS JavaScript (21910-2001)</p>
+            <p><span class="highlight-copyright">© 2025–2026</span> Portfolio Website</p>
+        </footer>
 
 </body>
 
